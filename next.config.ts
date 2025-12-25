@@ -10,6 +10,7 @@ const withPWA = withPWAInit({
 
 const nextConfig: NextConfig = {
   /* config options here */
+  turbopack: {}, // Silence turbopack/webpack conflict warning
   experimental: {
     serverActions: {
       allowedOrigins: ["localhost:3000", "192.168.0.104:3000"],
